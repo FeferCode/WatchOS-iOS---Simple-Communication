@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		606C3B7E20B9B2790045BE72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606C3B7D20B9B2790045BE72 /* AppDelegate.swift */; };
-		606C3B8020B9B2790045BE72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606C3B7F20B9B2790045BE72 /* ViewController.swift */; };
+		606C3B8020B9B2790045BE72 /* LoggedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606C3B7F20B9B2790045BE72 /* LoggedVC.swift */; };
 		606C3B8320B9B2790045BE72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606C3B8120B9B2790045BE72 /* Main.storyboard */; };
 		606C3B8620B9B2790045BE72 /* WatchProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 606C3B8420B9B2790045BE72 /* WatchProject.xcdatamodeld */; };
 		606C3B8820B9B27B0045BE72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606C3B8720B9B27B0045BE72 /* Assets.xcassets */; };
@@ -24,6 +24,10 @@
 		606C3BC820B9B3530045BE72 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606C3BC720B9B3530045BE72 /* ComplicationController.swift */; };
 		606C3BCA20B9B3540045BE72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606C3BC920B9B3540045BE72 /* Assets.xcassets */; };
 		606C3BCF20B9B3540045BE72 /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 606C3BB020B9B3520045BE72 /* WatchApp.app */; };
+		60A25B1220BC9FA500B6ABBA /* WatchConnectionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A25B1120BC9FA500B6ABBA /* WatchConnectionStatus.swift */; };
+		60A25B1420BC9FB400B6ABBA /* WatchConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A25B1320BC9FB400B6ABBA /* WatchConnectionManager.swift */; };
+		60A9098320CC74CE00A1EBD8 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9098220CC74CE00A1EBD8 /* Button.swift */; };
+		60A9098520CC773A00A1EBD8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A9098420CC773A00A1EBD8 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +89,7 @@
 /* Begin PBXFileReference section */
 		606C3B7A20B9B2790045BE72 /* WatchProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		606C3B7D20B9B2790045BE72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		606C3B7F20B9B2790045BE72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		606C3B7F20B9B2790045BE72 /* LoggedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedVC.swift; sourceTree = "<group>"; };
 		606C3B8220B9B2790045BE72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		606C3B8520B9B2790045BE72 /* WatchProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WatchProject.xcdatamodel; sourceTree = "<group>"; };
 		606C3B8720B9B27B0045BE72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +113,10 @@
 		606C3BC920B9B3540045BE72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		606C3BCB20B9B3540045BE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		606C3BCC20B9B3540045BE72 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		60A25B1120BC9FA500B6ABBA /* WatchConnectionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectionStatus.swift; sourceTree = "<group>"; };
+		60A25B1320BC9FB400B6ABBA /* WatchConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectionManager.swift; sourceTree = "<group>"; };
+		60A9098220CC74CE00A1EBD8 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		60A9098420CC773A00A1EBD8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +178,9 @@
 		606C3B7C20B9B2790045BE72 /* WatchProject */ = {
 			isa = PBXGroup;
 			children = (
+				60A9098620CC793300A1EBD8 /* Controllers */,
+				60A9098720CC794300A1EBD8 /* Views */,
 				606C3B7D20B9B2790045BE72 /* AppDelegate.swift */,
-				606C3B7F20B9B2790045BE72 /* ViewController.swift */,
 				606C3B8120B9B2790045BE72 /* Main.storyboard */,
 				606C3B8720B9B27B0045BE72 /* Assets.xcassets */,
 				606C3B8920B9B27B0045BE72 /* LaunchScreen.storyboard */,
@@ -219,8 +228,27 @@
 				606C3BC920B9B3540045BE72 /* Assets.xcassets */,
 				606C3BCB20B9B3540045BE72 /* Info.plist */,
 				606C3BCC20B9B3540045BE72 /* PushNotificationPayload.apns */,
+				60A25B1120BC9FA500B6ABBA /* WatchConnectionStatus.swift */,
+				60A25B1320BC9FB400B6ABBA /* WatchConnectionManager.swift */,
 			);
 			path = "WatchApp Extension";
+			sourceTree = "<group>";
+		};
+		60A9098620CC793300A1EBD8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				606C3B7F20B9B2790045BE72 /* LoggedVC.swift */,
+				60A9098420CC773A00A1EBD8 /* LoginVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		60A9098720CC794300A1EBD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				60A9098220CC74CE00A1EBD8 /* Button.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,9 +443,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606C3B8020B9B2790045BE72 /* ViewController.swift in Sources */,
+				606C3B8020B9B2790045BE72 /* LoggedVC.swift in Sources */,
 				606C3B7E20B9B2790045BE72 /* AppDelegate.swift in Sources */,
 				606C3B8620B9B2790045BE72 /* WatchProject.xcdatamodeld in Sources */,
+				60A9098320CC74CE00A1EBD8 /* Button.swift in Sources */,
+				60A9098520CC773A00A1EBD8 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +471,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A25B1220BC9FA500B6ABBA /* WatchConnectionStatus.swift in Sources */,
+				60A25B1420BC9FB400B6ABBA /* WatchConnectionManager.swift in Sources */,
 				606C3BC620B9B3530045BE72 /* NotificationController.swift in Sources */,
 				606C3BC820B9B3530045BE72 /* ComplicationController.swift in Sources */,
 				606C3BC420B9B3530045BE72 /* ExtensionDelegate.swift in Sources */,
@@ -552,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -606,7 +638,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -751,7 +783,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -773,7 +805,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -792,7 +824,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -811,7 +843,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};

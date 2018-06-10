@@ -9,7 +9,7 @@
 import UIKit
 import WatchConnectivity
 
-class ViewController: UIViewController {
+class LoggedVC: UIViewController {
 
     @IBOutlet weak var receivedLabel: UILabel!
     @IBOutlet weak var sendTextField: UITextField!
@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Send Message View"
         NotificationCenter.default.addObserver(self, selector: #selector(self.messageReceived), name: NSNotification.Name(rawValue: "watchMessage"), object: nil)
     }
 
